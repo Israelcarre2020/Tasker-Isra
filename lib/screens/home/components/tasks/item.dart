@@ -1,4 +1,4 @@
-import 'package:circular_check_box/circular_check_box.dart';
+//import 'package:circular_check_box/circular_check_box.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_slidable/flutter_slidable.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
@@ -92,10 +92,8 @@ class _TasksItemState extends State<TasksItem> {
                       padding: EdgeInsets.only(left: 10, right: 10),
                       child: Transform.scale(
                         scale: 1.2,
-                        child: CircularCheckBox(
+                        child: Checkbox(
                           activeColor: Colors.grey,
-                          inactiveColor:
-                              colors[int.parse(_.tasks[widget.index][1])],
                           checkColor: Colors.white,
                           value: _.tasks[widget.index][2] == 'done',
                           onChanged: (value) {

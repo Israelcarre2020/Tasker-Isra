@@ -34,7 +34,7 @@ class RemoveAllTasksDialog extends StatelessWidget {
                     : kDarkBackgroundColor.withOpacity(0.8)),
           ),
           actions: [
-            FlatButton(
+            TextButton(
               child: Text(
                 "Cancel",
                 style: GoogleFonts.ubuntu(
@@ -48,7 +48,7 @@ class RemoveAllTasksDialog extends StatelessWidget {
                 Navigator.pop(context);
               },
             ),
-            FlatButton(
+            TextButton(
               child: Text(
                 "Delete",
                 style: GoogleFonts.ubuntu(

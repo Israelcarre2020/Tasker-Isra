@@ -65,7 +65,7 @@ class EditProfileDialog extends StatelessWidget {
                     ),
                     TextField(
                         inputFormatters: [
-                          WhitelistingTextInputFormatter.digitsOnly
+                          FilteringTextInputFormatter.digitsOnly
                         ],
                         keyboardType: TextInputType.number,
                         style: GoogleFonts.ubuntu(
@@ -132,7 +132,7 @@ class EditProfileDialog extends StatelessWidget {
                   ]),
             ),
             actions: [
-              FlatButton(
+              TextButton(
                 child: Text(
                   "Discard",
                   style: GoogleFonts.ubuntu(
@@ -145,7 +145,7 @@ class EditProfileDialog extends StatelessWidget {
                   Navigator.pop(context);
                 },
               ),
-              FlatButton(
+              TextButton(
                 child: Text(
                   "Save",
                   style: GoogleFonts.ubuntu(
